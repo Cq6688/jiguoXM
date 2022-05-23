@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -71,6 +72,101 @@ nav .on a {
 }
 
 
+=======
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* 头部 */
+>>>>>>> 545f9f5889a80dc7112d097d40cdd69837d77800
 nav ul,
 ul {
     list-style: none;
@@ -143,6 +239,7 @@ a:visited {
     color: #fff;
 }
 
+<<<<<<< HEAD
 
 /* 头部 */
 .header {
@@ -309,3 +406,202 @@ dl dd {
 
 
 
+=======
+/* 焦点图 */
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+.focus {
+    background: url(img/original.jpg) no-repeat center top;
+}
+
+.focus-info {
+    color: #fff;
+}
+
+.focus-info .label span {
+    background: rgba(255, 255, 255, .3);
+}
+
+.focus-info .btn a {
+    background: #fe5341;
+    color: #fff;
+}
+
+.focus {
+    height: 300px;
+    overflow: hidden;
+}
+
+.focus-info {
+    text-align: right;
+    padding-top: 35px;
+    /* transform: translate(800px, -800px); */
+    -moz-animation: rotateIn 1s ease both;
+    -webkit-animation: rotateIn 1s ease both;
+    animation: rotateIn 1s ease both;
+}
+
+.focus-info h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.focus-info .label span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.focus-info .time {
+    padding: 20px 0 16px 0;
+    font-size: 18px;
+}
+
+.focus-info .btn a {
+    width: 242px;
+    height: 48px;
+    text-align: center;
+    display: inline-block;
+    line-height: 48px;
+    font-size: 24px;
+    border-radius: 3px;
+}
+
+/* 音箱 */
+.focus-info {
+    color: #fff;
+}
+
+.focus-info .label span {
+    background: rgba(255, 255, 255, .3);
+}
+
+.focus-info .btn a {
+    background: #fe5341;
+    color: #fff;
+}
+
+/* 热门试用 */
+
+.title {
+    color: #474747;
+    line-height: 1.6;
+}
+
+.title a.more {
+    background: url(img/readMore.png) no-repeat right 7px;
+    color: #fd6959;
+}
+
+.hot {
+    padding-bottom: 20px;
+}
+
+.hot a.prev {
+    background: url(img/prev.png) no-repeat;
+}
+
+.hot a.next {
+    background: url(img/next.png) no-repeat;
+}
+
+.slide-box dl {
+    background: #fff;
+}
+
+.use dt .top-tip {
+    color: #f5e8e8;
+}
+
+.use dt .shoufa {
+    background: #fe5341;
+}
+
+.use dt .red span,
+.use dt .sq span,
+.use dt .red {
+    color: #fe5341;
+}
+
+.use dt .tys {
+    background: #fbf4cb;
+    color: #c4a96a;
+}
+
+.use dt .green span,
+.use dt .green {
+    color: #80c269;
+}
+
+.use dt .graw span,
+.use dt .graw {
+    color: #ccc;
+}
+
+/* 
+.hot-slide {
+    width: 4000px;
+    float: left;
+} */
+
+.slide-box dl {
+    background: #fff;
+}
+
+.slide-box {
+    /* position: relative; */
+    width: 1000px;
+    height: 295px;
+    float: left;
+    overflow: hidden;
+}
+
+#dl1 {
+    width: 3500px;
+    float: left;
+}
+
+.slide-box dl {
+    /* position: absolute; */
+    width: 1000px;
+    z-index: 1;
+    /* left: 0; */
+    /* top: 0; */
+    float: left;
+}
+
+.slide-box dl.on {
+    z-index: 2;
+}
+
+/* 左切换 右切换 */
+.hot .prev {
+    background: url(../css/img/prev.png) no-repeat;
+}
+
+.hot .next {
+    background: url(../css/img/next.png) no-repeat;
+}
+
+.hot .prev,
+.hot .next {
+    position: absolute;
+    width: 37px;
+    height: 78px;
+    top: 550px;
+}
+
+.hot .prev {
+    left: 200px;
+}
+
+.hot .next {
+    right: 200px;
+}
+>>>>>>> 545f9f5889a80dc7112d097d40cdd69837d77800
