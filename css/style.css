@@ -1,0 +1,542 @@
+/* 头部 */
+.header nav a:hover {
+    color: #fe5341;
+}
+
+nav .on a {
+    color: #fe5341;
+}
+
+.header .login {
+    color: #fe5341;
+}
+
+.header .login:hover {
+    background: #fe5341;
+    color: #fff;
+}
+
+.header .search {
+    background: url(../css/img/search.png) no-repeat;
+}
+nav ul,
+ul {
+    list-style: none;
+}
+
+.wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1;
+}
+
+html {
+    background: none;
+}
+
+body {
+    height: 100%;
+    font-family: "Microsoft YaHei", SimHei, "微软雅黑", "黑体";
+    line-height: 1.6;
+    background: #fff;
+    font-size: 12px;
+    min-width: 1000px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    outline: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+.header {
+    height: 76px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+
+.logo {
+    padding-top: 13px;
+}
+
+.logo:hover img {
+    animation: fade 1s ease-in infinite;
+    -moz-animation: fade 1s ease-in infinite;
+    -webkit-animation: fade 1s ease-in infinite;
+}
+
+.header nav {
+    float: left;
+    padding: 28px 0 0 40px;
+}
+
+.header nav li {
+    float: left;
+    padding: 0 25px;
+}
+
+.header nav a {
+    transition: color 0.2s ease;
+    font-size: 20px;
+}
+
+.header .login {
+    transition: all 0.15s linear;
+    margin-top: 23px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px #fe5341 solid;
+}
+
+.header .search {
+    transition: transform 0.08s ease;
+    width: 42px;
+    height: 40px;
+    line-height: 999;
+    overflow: hidden;
+    margin-top: 28px;
+    margin-right: 15px;
+}
+
+.header .search:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.header .login {
+    transition: all 0.15s linear;
+    margin-top: 23px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px #fe5341 solid;
+}
+
+/* 导购清单 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.s-top {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+}
+
+.s-top h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.s-top .s-title {
+    width: 320px;
+    height: 40px;
+    margin: 30px auto;
+}
+.s-
+
+.s-top h5 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.s-top .s-al {
+    border-bottom: 4px solid rgb(254, 84, 49);
+}
+
+/* .s-top h5:nth-of-type(1) {
+    margin-left: 578px;
+} */
+
+.s-top h5 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.s-top .s-red {
+    color: red;
+}
+
+.s-content {
+    width: 100%;
+    height: 1180px;
+    background-color: rgb(247, 247, 247);
+}
+
+.s-content .s-list {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.s-content li {
+    list-style: none;
+    width: 220px;
+    height: 240px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.s-content li .s-body {
+    width: 220px;
+    position: absolute;
+    z-index: 3;
+    height: 225px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #e6e9e9;
+    overflow: hidden;
+}
+
+.s-content li img {
+    width: 100%;
+}
+
+.s-content li a {
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+}
+
+.s-content li p {
+    font-size: 14px;
+    width: 200px;
+    height: 45px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.s-content li .s-icon {
+    height: 30px;
+    margin-top: 20px;
+    float: right;
+    margin-right: 10px;
+}
+
+.s-content li .s-icon span {
+    font-size: 12px;
+    color: gray;
+    float: left;
+    width: 27px;
+    text-align: right;
+
+}
+
+.s-content li .s-icon .s-xin {
+    background: url(./img/xin.png) no-repeat 5px 2px;
+}
+
+.s-content li .s-icon .s-look {
+    background: url(./img/reply.png) no-repeat 5px 2px;
+}
+
+.s-content li .s-block1 {
+    width: 190px;
+    height: 20px;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 208px;
+    right: 15px;
+    z-index: 2;
+}
+
+.s-content li .s-block2 {
+    width: 170px;
+    height: 20px;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 214px;
+    right: 26px;
+}
+
+.s-footer {
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 40px;
+    background: url(./img/more.png) no-repeat 668px 5px;
+
+}
+
+/* 详情页 */
+
+.d-box {
+    width: 100%;
+    height: 4990px;
+    background-color: rgb(245, 245, 245);
+}
+
+.d-all {
+    width: 700px;
+    background-color: #fff;
+    border-radius: 6px;
+    float: left;
+}
+
+.d-header {
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.d-header p {
+    font-size: 12px;
+    color: gray;
+    padding-top: 20px;
+}
+
+.d-header p a {
+    text-decoration: none;
+    color: gray;
+}
+
+.d-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.d-content .d-c-header {
+    height: 130px;
+    width: 700px;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.d-content .d-c-header h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 20px
+}
+
+.d-content .d-c-header .d-c-name {
+    height: 30px;
+    width: 650px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.d-c-header .d-c-name p {
+    font-size: 12px;
+    color: gray;
+}
+
+.d-c-header .d-c-name p:nth-of-type(1) {
+    float: left;
+    margin-left: 10px;
+}
+
+.d-c-header .d-c-name p:nth-of-type(2) {
+    float: right;
+}
+
+.d-c-header .d-c-name .d-icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    border-radius: 10px;
+    background: url(./img/tx.jpg) no-repeat 0px 0px;
+}
+
+.d-a-content {
+    width: 650px;
+    margin: 20px auto;
+}
+
+.d-a-content p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.d-a-content h4 {
+    text-align: center;
+}
+
+.d-a-footer {
+    height: 80px;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.d-a-footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.a-right {
+    width: 270px;
+    height: 110px;
+    background-color: #fff;
+    float: right;
+    border-radius: 6px;
+}
+
+.a-right .a-r-all div {
+    float: left;
+    width: 135px;
+    height: 110px;
+    line-height: 130px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(246, 246, 246);
+}
+
+.a-right .a-r-all a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.a-right .a-r-all .a-r-left {
+    background: url(./img/xinRedo.png) no-repeat 50px 23px;
+}
+
+.a-right .a-r-all .a-r-right {
+    background: url(./img/share_yj1.png) no-repeat 54px 23px;
+}
+
+/**底部**/
+dl dd {
+    margin: 0;
+}
+
+.foot {
+    padding: 40px 0 15px;
+}
+
+.foot dl {
+    float: left;
+    font-size: 13px;
+    padding-left: 22px;
+    line-height: 20px;
+}
+
+.foot dl dt {
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.foot dl:nth-child(2) dd:last-child {
+    margin-top: 13px;
+}
+
+.foot dl:nth-child(4) dd a {
+    display: inline-block;
+    width: 69px;
+}
+
+.foot dl:nth-child(1) {
+    padding-left: 0;
+}
+
+.foot dl:nth-child(2) {
+    width: 140px;
+}
+
+.foot dl:nth-child(3) {
+    width: 100px;
+}
+
+.foot dl:nth-child(4) {
+    width: 140px;
+}
+
+.foot dl:nth-child(5) {
+    width: 148px;
+}
+
+.foot dl:nth-child(6) {
+    width: 180px;
+}
+
+.foot .copy {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 13px;
+}
+
+.foot {
+    background: #505050;
+    color: #a3a3a3;
+}
+
+.foot a {
+    color: #a3a3a3;
+}
+
+.foot dl dt {
+    color: #fff;
+}
