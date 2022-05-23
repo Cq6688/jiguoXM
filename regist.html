@@ -6,32 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/themes.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/regist.css">
 </head>
 
 <body>
-    <p><input type="text" id="user"></p>
-    <p><input type="text" id="age"></p>
-    <p><input type="button" value="提交" id="btn"></p>
-
+    <!-- 头部 -->
+    <header class="header">
+        <div class="wrap fix">
+            <div class="logo left">
+                <a href="index.html"><img src="img/logonew.png" width="132" /></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="play/index.html">酷玩</a></li>
+                    <li><a href="guid/index.html">导购</a></li>
+                    <li><a href="use/index.html">试用</a></li>
+                    <li><a href="report/index.html">报告</a></li>
+                </ul>
+            </nav>
+            <a href="regist.html" class="login right">注册</a>
+            <a href="" class="search right">搜索</a>
+        </div>
+        <!-- 登录 -->
+        <section id="secBody">
+            <div class="table">
+                <p id="yonghu">用户登录</p>
+                <div class="input-box">
+                    <i class="userHead"></i>
+                    <!--邮箱、以13、15、18开头的电话或者是2~4个汉字-->
+                    <input type="text" name="userName" placeholder="邮箱/手机/用户名" required
+                        pattern="[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}|^1[3578]\d{9}$|^[\u4e00-\u9fa5]{2,4}$" />
+                </div>
+                <div class="input-box">
+                    <i class="userLock"></i>
+                    <input type="password" name="password" placeholder="密码" required pattern="^\w{6,10}$" />
+                </div>
+                <div class="auto">
+                    <a class="autoMatic" href="#"><input class="loadGiet" type="checkbox" />自动登录</a>
+                    <a class="fr" href="#">忘记密码？</a>
+                </div>
+                <button class="btn">
+                    <a href="./index.html"></a>
+                    登录</button>
+                <!-- <input type="submit" class="btn" value="登录" /> -->
+            </div>
+        </section>
 </body>
 
 </html>
-<script type="text/javascript">
-    var btn = document.getElementById('btn');
-    var user = document.getElementById('user');
-    var age = document.getElementById('age');
+<script>
+    function login() {
+        var name = document.getElementsByTagName('usename')[0].value;
+        var password = document.getElementsByTagName('password')[0].value;
+        // console.log(name, password);
+        if (name.length >= 2 && password.length >= 6) {
+            localStorage.setItem('user', name);
+            localStorage.setItem('pass', password);
+            localStorage.setItem('islogin', true);
+            window.location.href = ''
 
-    btn.onclick = function () {
-        var xhr = new XMLHttpRequest();
-
-        var nameValue = user.value;
-        var ageValue = age.value;
-
-        var params = 'user=' + nameValue + '&age=' + ageValue;
-        xhr.open('get', 'http://localhost:3000/get' + params);
-        xhr.send();
-        xhr.onload = function () {
-            console.log(xhr.responseText)
         }
     }
 </script>

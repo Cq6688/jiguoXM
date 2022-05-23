@@ -17,7 +17,6 @@ nav .on a {
 }
 
 .header .search {
-<<<<<<< HEAD
     background: url(img/search.png) no-repeat;
 }
 
@@ -52,6 +51,12 @@ nav .on a {
 
 .listInfo {
     padding-left: 230px;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 /* 极果体验师 */
@@ -195,19 +200,12 @@ nav .on a {
     font-size: 20px;
     padding: 18px 0 16px;
     font-weight: bold;
-=======
     background: url(../css/img/search.png) no-repeat;
 }
+
 nav ul,
 ul {
     list-style: none;
-}
-
-.wrap {
-    width: 1000px;
-    min-width: 1000px;
-    text-align: left;
-    margin: 0 auto;
 }
 
 body {
@@ -368,9 +366,8 @@ section {
     height: 40px;
     margin: 30px auto;
 }
-.s-
 
-.s-top h5 {
+.s- .s-top h5 {
     float: left;
     font-size: 20px;
     font-weight: 400;
@@ -402,6 +399,11 @@ section {
     width: 100%;
     height: 1180px;
     background-color: rgb(247, 247, 247);
+}
+
+#guid1 {
+    height: 100%;
+    background-color: #fff;
 }
 
 .s-content .s-list {
@@ -718,5 +720,4 @@ dl dd {
 
 .foot dl dt {
     color: #fff;
->>>>>>> 791ec81fbec4fac44b8a11e60fa6a8fcdfac657c
 }
