@@ -9,7 +9,29 @@
 </head>
 
 <body>
+    <p><input type="text" id="user"></p>
+    <p><input type="text" id="age"></p>
+    <p><input type="button" value="提交" id="btn"></p>
 
 </body>
 
 </html>
+<script type="text/javascript">
+    var btn = document.getElementById('btn');
+    var user = document.getElementById('user');
+    var age = document.getElementById('age');
+
+    btn.onclick = function () {
+        var xhr = new XMLHttpRequest();
+
+        var nameValue = user.value;
+        var ageValue = age.value;
+
+        var params = 'user=' + nameValue + '&age=' + ageValue;
+        xhr.open('get', 'http://localhost:3000/get' + params);
+        xhr.send();
+        xhr.onload = function () {
+            console.log(xhr.responseText)
+        }
+    }
+</script>

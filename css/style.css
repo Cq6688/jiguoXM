@@ -1,0 +1,197 @@
+/* 头部 */
+.header nav a:hover {
+    color: #fe5341;
+}
+
+nav .on a {
+    color: #fe5341;
+}
+
+.header .login {
+    color: #fe5341;
+}
+
+.header .login:hover {
+    background: #fe5341;
+    color: #fff;
+}
+
+.header .search {
+    background: url(img/search.png) no-repeat;
+}
+
+/* 体验报告 */
+.report-box {
+    background: #f7f7f7;
+}
+
+.listInfo li .info {
+    background: rgba(255, 255, 255, .9);
+}
+
+.listInfo li .title {
+    color: #474747;
+}
+
+.listInfo .click-look {
+    color: #a3a3a3;
+}
+
+.listInfo .userInfo .avt {
+    background: url(img/tx.jpg) no-repeat;
+}
+
+.listInfo .userInfo .name {
+    color: #fe695a;
+}
+
+.listInfo .userInfo .time {
+    color: #a3a3a3;
+}
+
+.listInfo {
+    padding-left: 230px;
+}
+
+/* 极果体验师 */
+.listR .gm .money {
+    color: #fe5341;
+}
+
+.listR .gm .buyBtn {
+    color: #fff;
+    background: #fe5341;
+}
+
+.listR .gm .buyBtn:hover {
+    background: #f3250f;
+}
+
+.listR .gm .resource {
+    color: #a3a3a3;
+}
+
+.listR .title:after {
+    background: #fe5341;
+}
+
+.listR .info .text {
+    color: #a3a3a3;
+}
+
+.listR .info h5 {
+    color: #474747;
+}
+
+.listR {
+    padding-right: 290px;
+    position: absolute;
+}
+
+/* 点击加载更多 */
+.playMore {
+    color: #a3a3a3;
+}
+
+.playMore .more-btn {
+    background: url(img/more.png) no-repeat left center;
+    color: #fe5341;
+}
+
+.playMore .loading {
+    background-image: url(img/loading-icon.gif);
+}
+
+.playMore {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.playMore .more-btn {
+    padding-left: 24px;
+}
+
+.report .playMore {
+    padding-top: 22px;
+}
+
+/* 关于极果 */
+.about .grawBg {
+    background: #f3f3f3;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.about .grawBg h2 {
+    color: #444;
+}
+
+.about .listR a,
+.about .about-info {
+    color: #535353;
+}
+
+.about .about-info h5 {
+    color: #474747;
+}
+
+.about {
+    margin: 50px auto;
+}
+
+.about .grawBg {
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+
+.about .listInfo .grawBg {
+    padding: 25px 33px;
+}
+
+.about .grawBg h2 {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 900;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.about .listR h2 {
+    padding-left: 18px;
+}
+
+.about .listR dl {
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.about .listR dt {
+    font-weight: bold;
+}
+
+.about .listR dd {
+    padding-left: 15px;
+}
+
+.about .about-info {
+    font-size: 16px;
+}
+
+.about .about-info h3 {
+    font-size: 16px;
+    padding: 25px 0 20px;
+    font-weight: bold;
+}
+
+.about .about-info p {
+    line-height: 1.8;
+}
+
+.about .about-info h5 {
+    font-size: 20px;
+    padding: 18px 0 16px;
+    font-weight: bold;
+}
