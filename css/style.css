@@ -1,3 +1,8 @@
+
+.play-nav a,.category li a,.use-nav a{color:#a3a3a3;}
+.play-nav a.on{color:#fe5431;}
+nav .on a{color:#fe5341;}
+.use-nav a.on{color:#474747;}
 .play-nav a,
 .category li a,
 .use-nav a {
@@ -166,6 +171,7 @@ nav .on a {
 
 
 
+
 /* 头部 */
 .header nav a:hover {
     color: #fe5341;
@@ -185,6 +191,7 @@ nav .on a {
 }
 
 .header .search {
+
     background: url(img/search.png) no-repeat;
 }
 
@@ -368,6 +375,7 @@ dfn[title] {
     font-size: 20px;
     padding: 18px 0 16px;
     font-weight: bold;
+
     background: url(../css/img/search.png) no-repeat;
 }
 
@@ -656,17 +664,41 @@ section {
     color: gray;
     float: left;
 }
-
-
-.s-content li .s-icon .s-xin {
+/* 酷玩心 */
+.s-content li .s-icon .s-xin{
     width: 30px;
+    cursor: pointer;
     margin-left: 97px;
     text-align: right;
     background: url(./img/xin.png) no-repeat 5px 2px;
+    /* background: url(../css/img/xinRedh.png) no-repeat 5px 2px; */
 }
+.s-content li .s-icon .s-xin1{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 95px;
+    text-align: right;
+    /* background: url(./img/xin.png) no-repeat 5px 2px; */
+    background: url(../css/img/xinRedh.png) no-repeat 7px 3px;
+    background-size: 12px 12px;
+}
+
+/* 导购心 */
+
+.s-content li .s-icon1 .s-xin1{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 140px;
+    text-align: right;
+    /* background: url(./img/xin.png) no-repeat 5px 2px; */
+    background: url(../css/img/xinRedh.png) no-repeat 5px 2px;
+    background-size: 12px 12px;
+}
+
 
 .s-content li .s-icon .s-look {
     width: 30px;
+    cursor: pointer;
     text-align: right;
     background: url(./img/reply.png) no-repeat 5px 3px;
 }
@@ -680,6 +712,8 @@ section {
 .s-content li .s-icon1 .s-xin {
     margin-left: 140px;
 }
+
+
 
 
 .s-content li .s-block1 {
@@ -841,18 +875,21 @@ section {
     box-sizing: border-box;
     border: 1px solid rgb(246, 246, 246);
 }
-
-.a-right .a-r-all a {
-    text-decoration: none;
-    color: gray;
-    font-size: 14px;
+.a-right .a-r-all span{
+font-size: 14px;
 }
 
 .a-right .a-r-all .a-r-left {
+    color: gray;
+    cursor: pointer;
     background: url(./img/xinRedo.png) no-repeat 50px 23px;
+    /* background: url(./img/xinRedh.png) no-repeat 50px 23px; */
 }
 
 .a-right .a-r-all .a-r-right {
+    color: gray;
+    /* background: url(./img/shareh_yj1.png) no-repeat 54px 23px; */
+    cursor: pointer;
     background: url(./img/share_yj1.png) no-repeat 54px 23px;
 }
 
@@ -998,10 +1035,4 @@ dl dd {
 
 .foot dl dt {
     color: #fff;
-    <<<<<<< HEAD
 }
-
-=======>>>>>>>791ec81fbec4fac44b8a11e60fa6a8fcdfac657c
-}
-
->>>>>>>545f9f5889a80dc7112d097d40cdd69837d77800>>>>>>>ce1ef7dabf652e8268e1cebc0c4152f7d53024a8

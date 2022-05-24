@@ -18,9 +18,9 @@
             </div>
             <nav>
                 <ul>
-                    <li class="on"><a href="javascript:void(0);">首页</a></li>
+                    <li><a href="../index.html">首页</a></li>
                     <li><a href="../play/index.html">酷玩</a></li>
-                    <li><a href="../guid/index.html">导购</a></li>
+                    <li class="on"><a href="javascript:void(0);">导购</a></li>
                     <li><a href="../use/index.html">试用</a></li>
                     <li><a href="../report/index.html">报告</a></li>
                 </ul>
@@ -47,8 +47,8 @@
                             <p>到底有没有完美的iPhone手机配件，答案都在这里</p>
                         </a>
                         <div class="s-icon s-icon1">
-                            <a href=""><span class="s-xin">3</span></a>
-                            <a href=""><span class="s-look">3</span></a>
+                            <span class="s-xin" onclick="red(this)">3</span>
+                            <span class="s-look">3</span>
                         </div>
                     </div>
                     <div class="s-block1"></div>
@@ -109,70 +109,5 @@
 </body>
 
 </html>
-<script>
-    window.onload = function () {
-        var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
-
-        ajax_.open('get', 'http://127.0.0.1:3000/guid/new');
-        ajax_.send();
-
-        ajax_.onreadystatechange = function () {
-            if (ajax_.readyState == 4) {
-                if (ajax_.status == 200) {
-                    var data = JSON.parse(ajax_.responseText);
-
-
-                    render(data);
-                }
-            }
-        }
-    }
-
-    function render(data_) {
-        console.log(data_);
-        var str = '';
-        for (var item of data_) {
-            console.log(item);
-            str += `<li>
-            <div class="s-body">
-                <a href="./detail.html">
-                    <img src="${item.img}">
-                    <p>${item.text}</p>
-                </a>
-                <div class="s-icon s-icon1">
-                    <a href=""><span class="s-xin">${item.like}</span></a>
-                    <a href=""><span class="s-look">${item.words}</span></a>
-                </div>
-            </div>
-            <div class="s-block1"></div>
-            <div class="s-block2"></div>
-            </li>`;
-        }
-        for(var i=1;i<2;i++){
-            console.log(data_[i]);
-            str += `<li>
-            <div class="s-body">
-                <a href="./detail.html">
-                    <img src="${(data_[i]).img}">
-                    <p>${(data_[i]).text}</p>
-                </a>
-                <div class="s-icon s-icon1">
-                    <a href=""><span class="s-xin">${(data_[i]).like}</span></a>
-                    <a href=""><span class="s-look">${(data_[i]).words}</span></a>
-                </div>
-            </div>
-            <div class="s-block1"></div>
-            <div class="s-block2"></div>
-            </li>`;
-           
-        }
-        var ul_ = document.getElementsByClassName('s-list')[0];
-        ul_.innerHTML = str;
-    }
-
-    function loading(){
-        var p_ = document.getElementsByClassName('s-footer')[0];
-        p_.style.backgroundImage = "url('../css/img/loading-icon.gif')";
-        p_.innerHTML ='正在加载中';
-    }
-</script>
+<script src="../js/guidnew.js"></script>
+<!-- <script src="../js/guid.js"></script> -->
