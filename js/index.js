@@ -156,6 +156,6 @@ function gn(data_) {
 // 点击加载更多
 var play_ = document.getElementsByClassName('more-btn')[0];
 play_.onclick = function () {
-    this.style.backgroundImage = "url('../css/img/loading-icon.gif')";
+    this.style.backgroundImage = "url('./css/img/loading-icon.gif')";
 }
 
