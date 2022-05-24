@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <title>试用-大众试用</title>
-  <link href="../css/common.css" rel="stylesheet"/>
-  <link href="../css/themes.css" rel="stylesheet"/>
-  <link href="../css/style.css" rel="stylesheet"/>
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/common.js"></script>
- </head>
- <body>
+
+<head>
+	<meta charset="UTF-8">
+	<title>试用-大众试用</title>
+	<link href="../css/common.css" rel="stylesheet" />
+	<link href="../css/themes.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" />
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
 	<!--头部-->
 	<header class="header">
 		<div class="wrap fix">
 			<div class="logo left">
-				<a href="../index.html"><img src="../img/logonew.png" width="132"/></a>
+				<a href="../index.html"><img src="../img/logonew.png" width="132" /></a>
 			</div>
 			<nav>
 				<ul>
@@ -25,7 +27,7 @@
 					<li><a href="../report/index.html">报告</a></li>
 				</ul>
 			</nav>
-			<a href="../regist.html" class="login right">注册</a>
+			<a href="../注册.html" class="login right">注册</a>
 			<a href="" class="search right">搜索</a>
 		</div>
 	</header>
@@ -49,7 +51,7 @@
 	<section class="report-box">
 		<div class="wrap use common pad25">
 			<dl>
-				
+
 			</dl>
 			<div class="playMore">
 				<span class="no-more">没有更多啦~</span>
@@ -60,9 +62,9 @@
 	<footer class="foot">
 		<section class="wrap">
 			<div class="fix">
-				<dl><img src="../img/code.png" width="160" height="160"/></dl>
+				<dl><img src="../img/code.png" width="160" height="160" /></dl>
 				<dl>
-					<dt><img src="../img/logoImg.jpg"/></dt>
+					<dt><img src="../img/logoImg.jpg" /></dt>
 					<dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
 					<dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
 				</dl>
@@ -76,10 +78,12 @@
 					<dd><a href="http://www.zhidx.com/">智东西</a><a href="http://www.weibusi.net/">WEIBUSI</a></dd>
 					<dd><a href="http://it.sohu.com/">搜狐IT</a><a href="http://tech.qq.com/">腾讯科技</a></dd>
 					<dd><a href="http://digi.it.sohu.com/">搜狐数码</a><a href="http://tech.ifeng.com/">凤凰科技</a></dd>
-					<dd><a href="http://digi.ifeng.com/">凤凰数码</a><a href="http://product.pconline.com.cn/">PConline</a></dd>
+					<dd><a href="http://digi.ifeng.com/">凤凰数码</a><a href="http://product.pconline.com.cn/">PConline</a>
+					</dd>
 					<dd><a href="http://www.pcpop.com/">泡泡网</a><a href="http://www.3wcoffee.com/">3W咖啡</a></dd>
 					<dd><a href="http://bbs.zuk.cn/">ZUK社区</a><a href="http://emie.com/">亿觅emie</a></dd>
-					<dd><a href="http://www.geekpark.net/">极客公园</a><a href="http://zdm.yixun.com/index.html">易迅易启玩</a></dd>
+					<dd><a href="http://www.geekpark.net/">极客公园</a><a href="http://zdm.yixun.com/index.html">易迅易启玩</a>
+					</dd>
 					<dd><a href="http://www.guoku.com/">果库</a></dd>
 				</dl>
 				<dl>
@@ -101,39 +105,41 @@
 			<p class="copy">© 2016 极果版权所有</p>
 		</section>
 	</footer>
- </body>
+</body>
+
 </html>
 <script>
-	window.onload=function(){
+	window.onload = function () {
 
 
-var ajax_ =new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTp');
-ajax_.open('get','http://127.0.0.1:3000/useing/public');
-ajax_.send();
-ajax_.onreadystatechange = function(){
-	if(ajax_.readyState ==4){
-		if(ajax_.status==200){ 
-			// 转对象
-			var data=JSON.parse(ajax_.responseText);
-			show(data);}else{
-				alert('请求失败');
-			} 
+		var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTp');
+		ajax_.open('get', 'http://127.0.0.1:3000/useing/public');
+		ajax_.send();
+		ajax_.onreadystatechange = function () {
+			if (ajax_.readyState == 4) {
+				if (ajax_.status == 200) {
+					// 转对象
+					var data = JSON.parse(ajax_.responseText);
+					show(data);
+				} else {
+					alert('请求失败');
+				}
+			}
+
+		}
 	}
-	
-}
-}
 
-// 渲染数据
+	// 渲染数据
 
 
-function show(data){
+	function show(data) {
 
 
 
-var str ='';
-for(var i=0; i<=10 ;i++){
-  
-	str +=`<dt>
+		var str = '';
+		for (var i = 0; i <= 10; i++) {
+
+			str += `<dt>
 	<a href="guid/detail.html">
 	<span class="top-tip shoufa">${data[i].info_ty}</span>
 	<img src="${data[i].img}" with="220" height="130" />
@@ -149,8 +155,8 @@ for(var i=0; i<=10 ;i++){
 		</a>
 		</dt>
 	`;
-}
-var dl_ = document.getElementsByTagName('dl')[0];
-dl_.innerHTML= str;
-}
+		}
+		var dl_ = document.getElementsByTagName('dl')[0];
+		dl_.innerHTML = str;
+	}
 </script>

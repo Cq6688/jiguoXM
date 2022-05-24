@@ -608,7 +608,11 @@ dl dd {
 
 .pad25 {
     padding-top: 25px;
+}
+
+.fix7 {
     padding-left: 345px;
+
 }
 
 .listInfo {
@@ -717,9 +721,7 @@ dl dd {
 }
 
 .list7 {
-    position: absolute;
-    top: 510px;
-    right: -14px;
+    padding-top: 300px;
 }
 
 /* 极果体验师 */
