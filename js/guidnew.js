@@ -1,4 +1,4 @@
-
+window.onload = function () {
 var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
 
 ajax_.open('get', 'http://127.0.0.1:3000/guid/new');
@@ -13,6 +13,7 @@ ajax_.onreadystatechange = function () {
             render(data);
         }
     }
+}
 }
 
 
