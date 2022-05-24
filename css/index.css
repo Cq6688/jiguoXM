@@ -1,0 +1,141 @@
+/* -- 报告精选 -- */
+.common ul:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.common ul li {
+    background: #fff;
+}
+
+.common ul li a {
+    color: #474747;
+}
+
+.common .info .name span {
+    color: #a3a3a3;
+}
+
+.common .info .price {
+    color: #fe5341;
+}
+
+.common .info .tip {
+    color: #a3a3a3;
+}
+
+.common .title a.more {
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    padding-right: 17px;
+    font-size: 14px;
+}
+
+.common ul {
+    padding-bottom: 20px;
+}
+
+.common ul li {
+    width: 220px;
+    height: 231px;
+    line-height: 21px;
+    margin: 0 37px 20px 0;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+}
+
+.common ul li:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.common ul li a {
+    display: block;
+}
+
+.common ul li img {
+    border-radius: 6px 6px 0 0;
+}
+
+.common li a:hover img,
+.use dt a:hover img,
+.listInfo li a:hover img {
+    -webkit-animation: fade 1.2s ease-in infinite both;
+    -moz-animation: fade 1.2s ease-in infinite both;
+    animation: fade 1.2s ease-in infinite both;
+}
+
+.common li .info {
+    padding: 7px 10px 10px;
+}
+
+.common .info .name {
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.common .info .name span {
+    display: block;
+    font-size: 12px;
+}
+
+.common .info .price {
+    font-size: 14px;
+}
+
+.common .info .tip {
+    padding: 13px 0;
+}
+
+.icon span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    margin-left: 3px;
+}
+
+.common .info .name span {
+    color: #a3a3a3;
+}
+
+.common .info .price {
+    color: #fe5341;
+}
+
+.common .info .tip {
+    color: #a3a3a3;
+}
+
+/* 导购精选 */
+.guide li .info {
+    background: url(img/listbg.jpg) no-repeat left bottom;
+    background-size: 221px 19px;
+}
+
+.guide ul li {
+    height: 225px;
+    margin-bottom: 35px;
+}
+
+.icon .xin {
+    background: url(img/xin.png) no-repeat left center;
+}
+
+.icon .look {
+    background: url(img/reply.png) no-repeat left center;
+}
+
+.icon .zan {
+    background: url(img/zan.png) no-repeat left 4px;
+}
+
+.hot-box {
+    height: 390px;
+}
