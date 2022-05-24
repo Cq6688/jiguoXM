@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header class="header">
+        <div class="wrap fix">
+            <div class="logo left">
+                <a href="index.html"><img src="img/logonew.png" width="132" /></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="on"><a href="javascript:void(0);">首页</a></li>
+                    <li><a href="play/index.html">酷玩</a></li>
+                    <li><a href="guid/index.html">导购</a></li>
+                    <li><a href="use/index.html">试用</a></li>
+                    <li><a href="report/index.html">报告</a></li>
+                </ul>
+            </nav>
+            <a href="注册.html" class="login right">注册</a>
+            <a href="" class="search right">搜索</a>
+        </div>
+    </header>
+    
+    <section id="secTab">
+        <form action="#" id="registerForm">
+
+
+         <div id="aaa">
+             <div id="bbb"></div>
+            <div class="innerTab">
+                <p   id="ccc">极果注册</p>
+                <h2>           </h2>
+                <div class="tableItem ">
+                    <input type="text" name="phone" required placeholder="手机号码" id="t1" />
+                </div>
+                <div class="tableItem  onlyItem">
+                    <input type="text" name="" required placeholder="请输入图片效验码"   id="t6"/>
+                    
+                   
+                    <span><img src="./img/imgCode.jpg" alt=""  id="ttt"></span>
+                </div>
+                <div class="cf">
+                    <div class="tableItem onlyItem fl">
+                        <input class="yanzheng" type="text" name="yanzheng" placeholder="验证码" id="t2" />
+                    </div>
+                    <a class="tableText fr" href="#">获取验证码</a>
+                </div>
+                <div class="tableItem">
+                    <input type="text" name="text" required placeholder="用户名"  id="t7" />
+                </div>
+                <div class="tableItem">
+                    <input type="password" name="password" required placeholder="设置密码" pattern="^\w{6,10}$" id="t3" />
+                </div>
+                <div class="tableItem">
+                    <input type="password" name="rePassword" required placeholder="确认密码" pattern="^\w{6,10}$" id="t4" />
+                </div>
+                
+               <a href="./regist.html"> <input type="button" class="tableBtn" value="同意协议并注册" disabled></a>
+            </div>
+            <ul class="xxx">
+                <li class="xx"></li>
+                <li class="xx"></li>
+                <li class="xx"></li>
+                <li class="xx"></li>
+                <li class="xx"></li>
+                <li class="xx"></li>
+
+            </ul>
+         </div>
+
+
+        </form>
+    </section>
+   
+    
+    <!--底部-->
+    <footer class="foot">
+        <section class="wrap">
+            <div class="fix">
+                <dl><img src="img/code.png" width="160" height="160" /></dl>
+                <dl>
+                    <dt><img src="img/logoImg.jpg" /></dt>
+                    <dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
+                    <dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
+                </dl>
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd><a href="help.html#lc">试用流程</a></dd>
+                    <dd><a href="help.html#cg">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="#">智东西</a><a href="#">WEIBUSI</a></dd>
+                    <dd><a href="#">搜狐IT</a><a href="#">腾讯科技</a></dd>
+                    <dd><a href="#">搜狐数码</a><a href="#">凤凰科技</a></dd>
+                    <dd><a href="#">凤凰数码</a><a href="#">PConline</a></dd>
+                    <dd><a href="#">泡泡网</a><a href="#">3W咖啡</a></dd>
+                    <dd><a href="#">ZUK社区</a><a href="#">亿觅emie</a></dd>
+                    <dd><a href="#">极客公园</a><a href="#">易迅易启玩</a></dd>
+                    <dd><a href="#">果库</a></dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd><a href="#">美亚海淘教程</a></dd>
+                    <dd><a href="#">日亚海淘教程</a></dd>
+                    <dd><a href="#">海淘转运攻略</a></dd>
+                    <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+                    <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd><a href="about.html">关于极果</a></dd>
+                    <dd><a href="about.html#connect">联系我们</a></dd>
+                    <dd><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></dd>
+                    <dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
+                </dl>
+            </div>
+            <p class="copy"> 2016 极果版权所有</p>
+        </section>
+    </footer>
+    <!--返回顶部-->
+    <a href="javascript:void(0);" class="backTop" id="back">返回顶部</a>
+</body>
+
+</html>
+<script>var t1 = document.getElementById('t1');
+    var t2 = document.getElementById('t2');
+    var t3 = document.getElementById('t3');
+    var t4 = document.getElementById('t4');
+    var xx = document.getElementsByClassName('xx');
+    var t5 ='r2b7';
+    var t6 =document.getElementById('t6');
+    var t4 = document.getElementById('t7');
+    var agg = 0;
+    t1.onblur = function () {
+        var arr_ = /^1[3578]\d{9}$/;
+        // console.log(arr_.test(t1.value));
+        if (!arr_.test(t1.value)) {
+            // alert('请输入正确的手机号');
+            xx[0].style.color = 'red'
+            xx[0].innerHTML = '请输入正确的手机号';
+        } else {
+            xx[0].style.color = 'yellowgreen'
+            xx[0].innerHTML = '输入正确';
+            agg++;
+            fu(agg)
+        }
+    }
+    t6.onblur = function () {
+        if (t6.value != t5) {
+            xx[1].style.color = 'red'
+            xx[1].innerHTML = '验证码错误';
+        } else  if(t6.value==''){
+        xx[1].innerHTML = '验证码不能为空';
+        }
+          else {
+            xx[1].style.color = 'yellowgreen'
+            xx[1].innerHTML = '输入正确';
+            agg++;
+            fu(agg)
+        }
+    
+
+    }
+   
+
+    var tableText = document.getElementsByClassName('tableText')[0];
+    var obj;
+    var timer;
+    tableText.onclick = function () {
+        tableText.style.pointerEvents = "none";
+        var num_ = 60;
+        obj = [];
+        clearInterval(timer)
+        timer = setInterval(function () {
+            num_--;
+    
+            if(t1.value==''){
+                tableText.innerHTML = '获取验证码';
+                clearInterval(timer)
+                tableText.style.pointerEvents = "";
+                xx[0].innerHTML = '手机号不能为空';
+               
+            }else if (t6.value !=t5) {
+            xx[1].innerHTML = '图像验证码不能为空';
+          } else   if (num_ == 57  ) {
+                for (var i = 0; i < 4; i++) {
+                    var num = Math.floor(Math.random() * 10);
+                    obj.push(num)
+                }
+                obj = obj.join('');
+                alert('你的验证码为：' + obj);
+            }else  if (num_ == 0 ) {
+                clearInterval(timer)
+                num_ = 60;
+                tableText.style.pointerEvents = "";
+                tableText.innerHTML = '重新获取';
+               
+            } else if(num_<=60 && num_>=0){
+    
+                tableText.innerHTML = num_ + '秒后可重新发送';
+            }else{
+    
+            }
+            
+    
+        }, 1000)
+    
+    
+    
+    }
+    t3.onblur = function () {
+        var arr = /^\w{6,10}$/;
+        if (!arr.test(t3.value)) {
+            xx[4].style.color = 'red'
+            xx[4].innerHTML = '请设置正确格式的密码:6-10位数';
+        }else if(t3.value==''){
+        xx[4].innerHTML = '密码不能为空';
+    }else {
+            xx[4].style.color = 'yellowgreen'
+            xx[4].innerHTML = '输入正确';
+            agg++;
+            fu(agg)
+        }
+    
+    }
+    t4.onblur = function () {
+        if (t4.value != t3.value) {
+            xx[5].style.color = 'red'
+            xx[5].innerHTML = '密码不一致';
+        } 
+        else if(t4.value==''){
+        xx[5].innerHTML = '密码不能为空';
+    }else {
+            xx[5].style.color = 'yellowgreen'
+            xx[5].innerHTML = '输入正确';
+            agg++;
+            fu(agg)
+        }
+   
+    }
+  
+  
+    
+    t2.onblur= function () {
+        if (t2.value != obj) {
+            xx[2].style.color = 'red'
+            xx[2].innerHTML = '验证码错误';
+        } 
+        
+        else  if(t2.value==''){
+        xx[2].innerHTML = '验证码不能为空';
+    }else {
+            xx[2].style.color = 'yellowgreen'
+            xx[2].innerHTML = '输入正确';
+            agg++;
+            fu(agg)
+        }
+    
+    }
+   
+    var tableBtn = document.getElementsByClassName('tableBtn')[0];
+    tableBtn.style.disabled = 'disabled';
+    tableBtn.style.backgroundColor = '#666';
+    function fu(a) {
+        if (a >= 4) {
+            tableBtn.removeAttribute('disabled');
+            tableBtn.style.backgroundColor = '#FF3C3C';
+        }
+    }
+   
+   t7.onblur=function(){
+    if(t7.value==''){
+        xx[3].innerHTML = '用户名不能为空';
+    }
+   }
+  
+  
+
+   
+
+    </script>
