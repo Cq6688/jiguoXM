@@ -17,6 +17,7 @@ function showdata() {
         }
     }
 }
+
 showdata();
 
 // 轮播图的图片
@@ -47,6 +48,34 @@ showdata();
 //     dl1_.innerHTML = str;
 
 // }
+function show(data_) {
+    console.log(data_);
+    var str = '';
+    for (var i = 8; i < 12; i++) {
+        console.log(data_[i]);
+        str += ` <dt>
+            <a href="use/detail.html">
+                <span class="top-tip shoufa">${(data_[i]).info_ty}</span>
+                <img src="${(data_[i]).img}" width="220" height="130" />
+                <div class="hot-con">
+                    <h2 class="name">${(data_[i]).text}</h2>
+                    <p class="tabs red">
+                        <span>${(data_[i]).totalnum}</span>
+                        <span>${(data_[i]).num}</span>
+                    </p>
+                    <p class="sq"><span>${(data_[i]).apply}</span>申请</p>
+                    <p class="current red">剩余时间2天</p>
+                </div>
+            </a>
+        </dt>`;
+
+    }
+    // 点击加载更多
+    var dl1_ = document.getElementById('dl1');
+    // console.log(dl1_);
+    dl1_.innerHTML = str;
+
+}
 // 报告精选
 function look(data_) {
     var str = '';
@@ -70,7 +99,7 @@ function look(data_) {
 
     }
     var ul1_ = document.getElementById('ul1');
-    // console.log(ul1_);
+    console.log(ul1_);
     ul1_.innerHTML = str;
 }
 // 导购精选
@@ -125,12 +154,8 @@ function gn(data_) {
 }
 
 // 点击加载更多
-// var play_ = document.getElementsByClassName('more-btn')[0];
-// play_.onclick = function () {
-//     this.style.backgroundImage = "url('../css/img/loading-icon.gif')";
-// }
-
-
-
-
+var play_ = document.getElementsByClassName('more-btn')[0];
+play_.onclick = function () {
+    this.style.backgroundImage = "url('../css/img/loading-icon.gif')";
+}
 

@@ -502,6 +502,10 @@ a:visited {
     height: 0;
     visibility: hidden;
 }
+.fix{
+    width: 1000px;
+    margin: 0 auto;
+}
 
 .header .login {
     transition: all 0.15s linear;
