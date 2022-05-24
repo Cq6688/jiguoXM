@@ -438,26 +438,6 @@
     font-weight: bold;
 }
 
-.listR .gm .money {
-    font-size: 40px;
-    padding: 20px 0 15px;
-}
-
-.listR .gm .buyBtn {
-    display: block;
-    height: 48px;
-    border-radius: 5px;
-    line-height: 48px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.listR .gm .resource {
-    margin: 10px 0;
-    font-size: 14px;
-    text-align: center;
-}
-
 .useBtm {
     margin-bottom: 25px;
 }
@@ -532,10 +512,6 @@
 
 .listInfo .btm .icon {
     color: #a3a3a3;
-}
-
-.listR {
-    width: 270px;
 }
 
 .bread {
@@ -814,6 +790,12 @@ dl dd {
     font-size: 18px;
 }
 
+.list7 {
+    position: absolute;
+    top: 510px;
+    right: -14px;
+}
+
 /* 极果体验师 */
 .listR .gm .money {
     font-size: 40px;
@@ -835,8 +817,21 @@ dl dd {
     text-align: center;
 }
 
+#list6 {
+    position: relative;
+}
+
 .listR {
     width: 270px;
+    position: absolute;
+    top: 275px;
+    right: 10px;
+}
+
+.right6 {
+    position: absolute;
+    top: 26px;
+    right: 10px;
 }
 
 .listR .title {

@@ -1,4 +1,4 @@
-window.onload = function () {
+function showdata() {
     var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
 
     ajax_.open('get', 'http://127.0.0.1:3000/useing/master');
@@ -7,8 +7,8 @@ window.onload = function () {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 var data = JSON.parse(ajax_.responseText);
-                // console.log(data);
-                show(data);
+                console.log(data);
+                // show(data);
                 look(data);
                 fn(data);
                 gn(data);
@@ -17,40 +17,41 @@ window.onload = function () {
         }
     }
 }
+showdata();
 
+// 轮播图的图片
+// function show(data_) {
+//     // console.log(data_);
+//     var str = '';
+//     for (var i = 8; i < 12; i++) {
+//         // console.log(data_[i]);
+//         str += ` <dt>
+//             <a href="use/detail.html">
+//                 <span class="top-tip shoufa">${(data_[i]).info_ty}</span>
+//                 <img src="${(data_[i]).img}" width="220" height="130" />
+//                 <div class="hot-con">
+//                     <h2 class="name">${(data_[i]).text}</h2>
+//                     <p class="tabs red">
+//                         <span>${(data_[i]).totalnum}</span>
+//                         <span>${(data_[i]).num}</span>
+//                     </p>
+//                     <p class="sq"><span>${(data_[i]).apply}</span>申请</p>
+//                     <p class="current red">剩余时间2天</p>
+//                 </div>
+//             </a>
+//         </dt>`;
 
-function show(data_) {
-    console.log(data_);
-    var str = '';
-    for (var i = 8; i < 12; i++) {
-        // console.log(data_[i]);
-        str += ` <dt>
-            <a href="use/detail.html">
-                <span class="top-tip shoufa">${(data_[i]).info_ty}</span>
-                <img src="${(data_[i]).img}" width="220" height="130" />
-                <div class="hot-con">
-                    <h2 class="name">${(data_[i]).text}</h2>
-                    <p class="tabs red">
-                        <span>${(data_[i]).totalnum}</span>
-                        <span>${(data_[i]).num}</span>
-                    </p>
-                    <p class="sq"><span>${(data_[i]).apply}</span>申请</p>
-                    <p class="current red">剩余时间2天</p>
-                </div>
-            </a>
-        </dt>`;
+//     }
+//     var dl1_ = document.getElementById('dl1');
+//     // console.log(dl1_);
+//     dl1_.innerHTML = str;
 
-    }
-    var dl1_ = document.getElementById('dl1');
-    // console.log(dl1_);
-    dl1_.innerHTML = str;
-
-}
+// }
 // 报告精选
 function look(data_) {
     var str = '';
     for (var i = 0; i < 8; i++) {
-        // console.log(data_[i]);
+        console.log(data_[i]);
         str += ` <li>
             <a href="guid/detail.html">
                 <img src="${(data_[i]).img}" width="220" height="130" />
@@ -124,13 +125,11 @@ function gn(data_) {
 }
 
 // 点击加载更多
-var play_ = document.getElementsByClassName('more-btn')[0];
-play_.onclick = function () {
-    this.style.backgroundImage = "url('../css/img/loading-icon.gif')";
-}
+// var play_ = document.getElementsByClassName('more-btn')[0];
+// play_.onclick = function () {
+//     this.style.backgroundImage = "url('../css/img/loading-icon.gif')";
+// }
 
-
-}
 
 
 
