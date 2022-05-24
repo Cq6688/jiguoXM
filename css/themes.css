@@ -218,14 +218,6 @@
     line-height: 20px;
 }
 
-.common li a:hover img,
-.use dt a:hover img,
-.listInfo li a:hover img {
-    -webkit-animation: fade 1.2s ease-in infinite both;
-    -moz-animation: fade 1.2s ease-in infinite both;
-    animation: fade 1.2s ease-in infinite both;
-}
-
 .report-box .use dt {
     margin-bottom: 35px;
     background: #fff;
@@ -449,69 +441,6 @@
     vertical-align: middle;
     padding-left: 14px;
     margin-left: 3px;
-}
-
-.listInfo {
-    width: 700px;
-}
-
-.listInfo li {
-    border-radius: 6px;
-    border: 1px solid #e6e9e9;
-    margin-bottom: 13px;
-    position: relative;
-    overflow: hidden;
-}
-
-.listInfo li a {
-    display: block;
-}
-
-.listInfo li .info {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 22px;
-}
-
-.listInfo li img {
-    border-radius: 6px;
-}
-
-.listInfo li .title {
-    font-size: 18px;
-    padding: 9px 0 12px;
-    font-weight: normal;
-}
-
-.listInfo li .btm {
-    font-size: 13px;
-    padding: 16px 0 11px;
-}
-
-.listInfo .click-look {
-    text-align: center;
-    height: 48px;
-    line-height: 48px;
-    font-size: 14px;
-}
-
-.listInfo .userInfo span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.listInfo .userInfo .avt {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-}
-
-.listInfo .btm .icon {
-    color: #a3a3a3;
 }
 
 .bread {
@@ -825,13 +754,13 @@ dl dd {
     width: 270px;
     position: absolute;
     top: 275px;
-    right: 10px;
+    right: -20px;
 }
 
 .right6 {
     position: absolute;
     top: 26px;
-    right: 10px;
+    right: -290px;
 }
 
 .listR .title {

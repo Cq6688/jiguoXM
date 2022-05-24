@@ -9,14 +9,6 @@
     <link href="css/themes.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css">
-    <<<<<<< HEAD=======<<<<<<< HEAD <!-- <script src="js/jquery.min.js">
-        </script> -->
-        <!-- <script src="js/common.js"></script> -->
-        =======
-        >>>>>>> 05a136a31137deff22afb7cfa6a034d4ddeec7ef
-        <script src="./js/index.js"></script>
-        >>>>>>> e8f625d184a6bfebb0c013a7b2466085205543a2
-
 </head>
 
 <body>
@@ -379,23 +371,19 @@
 </body>
 
 </html>
-<<<<<<< HEAD <script src="./js/index.js">
-    </script>
-    <script src="./js/return.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/load.js"></script>
-
-    <script>
-        window.onload = function () {
-            var a = document.getElementsByClassName('login right')[0];
-            var name = localStorage.getItem('user');
-            var islogin = localStorage.getItem('islogin');
-            if (islogin) {
-                var str = `hi-&nbsp;${name}`;
-                a.innerHTML = str;
-                a.style.width = '100px';
-                a.style.border = 'none';
-            }
+<script>
+    window.onload = function () {
+        var a = document.getElementsByClassName('login right')[0];
+        var name = localStorage.getItem('user');
+        var islogin = localStorage.getItem('islogin');
+        if (islogin) {
+            var str = `hi-&nbsp;${name}`;
+            a.innerHTML = str;
+            a.style.width = '100px';
+            a.style.border = 'none';
         }
+    }
 
-    </script>
+</script>
+<script src="./js/index.js"></script>
+<script src="./js/return.js"></script>

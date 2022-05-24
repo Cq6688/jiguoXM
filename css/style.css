@@ -1,8 +1,21 @@
+.play-nav a,
+.category li a,
+.use-nav a {
+    color: #a3a3a3;
+}
 
-.play-nav a,.category li a,.use-nav a{color:#a3a3a3;}
-.play-nav a.on{color:#fe5431;}
-nav .on a{color:#fe5341;}
-.use-nav a.on{color:#474747;}
+.play-nav a.on {
+    color: #fe5431;
+}
+
+nav .on a {
+    color: #fe5341;
+}
+
+.use-nav a.on {
+    color: #474747;
+}
+
 .play-nav a,
 .category li a,
 .use-nav a {
@@ -148,30 +161,6 @@ nav .on a {
     color: rgb(255, 0, 0);
 }
 
-.listR .gm .money {
-    color: #fe5341;
-}
-
-.listR .gm .buyBtn {
-    color: #fff;
-    background: #fe5341;
-}
-
-.listR .gm .buyBtn:hover {
-    background: #f3250f;
-}
-
-.listR .gm .resource {
-    color: #a3a3a3;
-}
-
-
-
-
-
-
-
-
 /* 头部 */
 .header nav a:hover {
     color: #fe5341;
@@ -224,10 +213,6 @@ nav .on a {
     color: #a3a3a3;
 }
 
-.listInfo {
-    padding-left: 230px;
-}
-
 abbr[title],
 dfn[title] {
     border-bottom: 1px dotted;
@@ -267,6 +252,7 @@ dfn[title] {
 .listR {
     padding-right: 290px;
     position: absolute;
+    /* right: -20px; */
 }
 
 /* 点击加载更多 */
@@ -502,10 +488,20 @@ a:visited {
     height: 0;
     visibility: hidden;
 }
-.fix{
+
+.header .fix {
     width: 1000px;
     margin: 0 auto;
 }
+
+.report-box .fix {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* #fix {
+    padding-right: -1000px;
+} */
 
 .header .login {
     transition: all 0.15s linear;
@@ -668,8 +664,9 @@ section {
     color: gray;
     float: left;
 }
+
 /* 酷玩心 */
-.s-content li .s-icon .s-xin{
+.s-content li .s-icon .s-xin {
     width: 30px;
     cursor: pointer;
     margin-left: 97px;
@@ -677,7 +674,8 @@ section {
     background: url(./img/xin.png) no-repeat 5px 2px;
     /* background: url(../css/img/xinRedh.png) no-repeat 5px 2px; */
 }
-.s-content li .s-icon .s-xin1{
+
+.s-content li .s-icon .s-xin1 {
     width: 30px;
     cursor: pointer;
     margin-left: 95px;
@@ -689,7 +687,7 @@ section {
 
 /* 导购心 */
 
-.s-content li .s-icon1 .s-xin1{
+.s-content li .s-icon1 .s-xin1 {
     width: 30px;
     cursor: pointer;
     margin-left: 140px;
@@ -879,8 +877,9 @@ section {
     box-sizing: border-box;
     border: 1px solid rgb(246, 246, 246);
 }
-.a-right .a-r-all span{
-font-size: 14px;
+
+.a-right .a-r-all span {
+    font-size: 14px;
 }
 
 .a-right .a-r-all .a-r-left {

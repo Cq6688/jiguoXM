@@ -86,7 +86,7 @@ function look(data_) {
                 <img src="${(data_[i]).img}" width="220" height="130" />
                 <div class="info">
                     <p class="name">${(data_[i]).text}</p>
-                    <div class="tip fix">
+                    <div class="tip fix" id="fix8">
                         <span class="nick left">●${(data_[i]).uName}</span>
                         <div class="right icon">
                             <span class="zan">3</span>
