@@ -10,9 +10,6 @@
     <link href="css/themes.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/regist.css">
 </head>
@@ -43,18 +40,20 @@
                 <div class="input-box">
                     <i class="userHead"></i>
                     <!--邮箱、以13、15、18开头的电话或者是2~4个汉字-->
-                    <input type="text" name="userName" placeholder="邮箱/手机/用户名" required
-                        pattern="[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}|^1[3578]\d{9}$|^[\u4e00-\u9fa5]{2,4}$" />
+                    <!-- required
+                        pattern="[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}|^1[3578]\d{9}$|^[\u4e00-\u9fa5]{2,4}$"  -->
+                    <input type="text" placeholder="邮箱/手机/用户名" />
                 </div>
                 <div class="input-box">
                     <i class="userLock"></i>
-                    <input type="password" name="password" placeholder="密码" required pattern="^\w{6,10}$" />
+                    <!-- required pattern="^\w{6,10}$" -->
+                    <input type="password" placeholder="密码" />
                 </div>
                 <div class="auto">
                     <a class="autoMatic" href="#"><input class="loadGiet" type="checkbox" />自动登录</a>
                     <a class="fr" href="#">忘记密码？</a>
                 </div>
-                <button class="btn">
+                <button class="btn" onclick="login()">
                     <a href="./index.html"></a>
                     登录</button>
                 <!-- <input type="submit" class="btn" value="登录" /> -->
@@ -65,14 +64,14 @@
 </html>
 <script>
     function login() {
-        var name = document.getElementsByTagName('usename')[0].value;
-        var password = document.getElementsByTagName('password')[0].value;
-        // console.log(name, password);
+        var name = document.getElementsByTagName('input')[0].value;
+        var password = document.getElementsByTagName('input')[1].value;
+        console.log(name);
         if (name.length >= 2 && password.length >= 6) {
             localStorage.setItem('user', name);
             localStorage.setItem('pass', password);
             localStorage.setItem('islogin', true);
-            window.location.href = ''
+            window.location.href = 'http//127.0.0.1:3000/index/html'
 
         }
     }

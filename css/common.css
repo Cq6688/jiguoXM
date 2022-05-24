@@ -1,47 +1,146 @@
-<<<<<<< HEAD
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
-a:hover,a:focus,a:visited{text-decoration:none;}
-html{background:none;}
-body{height:100%;font-family:"Microsoft YaHei",SimHei,"微软雅黑","黑体";line-height:1.6;background:#fff;font-size:12px;min-width:1000px;color:#333;}
-a{text-decoration:none;color:#333;outline:none;}
-a:hover{text-decoration:none;}
-a:active{outline:none;}
+
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+html {
+    background: none;
+}
+
+body {
+    height: 100%;
+    font-family: "Microsoft YaHei", SimHei, "微软雅黑", "黑体";
+    line-height: 1.6;
+    background: #fff;
+    font-size: 12px;
+    min-width: 1000px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    outline: none;
+}
 
 
-.wrap{width:1000px;min-width:1000px;text-align:left;margin:0 auto;}
+.wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
 
 
 
@@ -72,7 +171,6 @@ nav .on a {
 }
 
 
-=======
 html,
 body,
 div,
@@ -166,7 +264,6 @@ section {
 }
 
 /* 头部 */
->>>>>>> 545f9f5889a80dc7112d097d40cdd69837d77800
 nav ul,
 ul {
     list-style: none;
@@ -239,7 +336,6 @@ a:visited {
     color: #fff;
 }
 
-<<<<<<< HEAD
 
 /* 头部 */
 .header {
@@ -387,6 +483,9 @@ dl dd {
     font-size: 13px;
 }
 
+.ty {
+    margin-right: 100px;
+}
 
 
 
@@ -406,7 +505,7 @@ dl dd {
 
 
 
-=======
+
 /* 焦点图 */
 a:hover,
 a:focus,
@@ -604,4 +703,3 @@ a:visited {
 .hot .next {
     right: 200px;
 }
->>>>>>> 545f9f5889a80dc7112d097d40cdd69837d77800
