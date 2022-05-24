@@ -494,10 +494,15 @@ a:visited {
     margin: 0 auto;
 }
 
+#myDiv {
+    margin-right: 100px;
+}
 
-/* #fix {
-    padding-right: -1000px;
-} */
+.foot .wrap .fix {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 
 .header .login {
     transition: all 0.15s linear;

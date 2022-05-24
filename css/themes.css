@@ -290,10 +290,6 @@
     font-size: 14px;
 }
 
-.pad25 {
-    padding-top: 25px;
-}
-
 .playMore {
     text-align: center;
     font-size: 16px;
@@ -612,6 +608,7 @@ dl dd {
 
 .pad25 {
     padding-top: 25px;
+    padding-left: 345px;
 }
 
 .listInfo {
@@ -760,7 +757,7 @@ dl dd {
 .right6 {
     position: absolute;
     top: 26px;
-    right: -290px;
+    /* right: -290px; */
 }
 
 .listR .title {

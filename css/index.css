@@ -139,3 +139,8 @@
 .hot-box {
     height: 390px;
 }
+
+.report-box .report {
+    width: 1000px;
+    margin: 0 auto;
+}
